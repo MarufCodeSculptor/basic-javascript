@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.0.3/dist/full.css" rel="stylesheet">
+    <title>Your Webpage</title>
+    
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-500 h-screen flex items-center justify-center">
+    <div class="bg-opacity-30 bg-white bg-blur w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 p-8 rounded-lg">
+        <div class="">
+                
+        </div>
+        
+        <div class="flex items-center justify-between space-x-4 mb-8">
+            <input id="input1" type="text" class="input" placeholder="Enter text...">
+            <input id="input2" type="text" class="input" placeholder="Enter text...">
+            <button onclick="showMessage()" class="btn">Submit</button>
+        </div>
+    </div>
+
+    <script>   
+    
+    
+
+function showMessage() {
+    const input1Value = document.getElementById('input1').value;
+    const input2Value = document.getElementById('input2').value;
+    const messageSection = document.getElementById('messageSection');
+
+    // Your logic to process input values and show a message to the user
+    const message = `You entered: ${input1Value} and ${input2Value}`;
+    
+    // Display the message
+    messageSection.textContent = message;
+}
+
+    
+    </script>
+</body>
+</html>
